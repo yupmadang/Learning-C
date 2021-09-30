@@ -118,3 +118,25 @@ int main(void) {
 
     return 0;
 }*/
+
+int total = 0;
+
+int AddToTotal(int num){
+
+    total+=num;
+    return total;
+
+}
+
+int main (void){
+
+    int num, i;
+    for(i = 0; i < 3; i++){
+
+        printf("정수를 입력하세요 : %d ", i+1 );
+        scanf("%d",&num);
+        printf("누적 : %d \n",AddToTotal(num));
+    }
+
+    return 0;
+}
