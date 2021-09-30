@@ -119,11 +119,11 @@ int main(void) {
     return 0;
 }*/
 
-int total = 0;
+/*int total = 0; - 이부분을 전역변수에서 제거하고
 
 int AddToTotal(int num){
 
-    total+=num;
+    total+=num; - 이부분을 static 변수로 선언을 하면 전역변수와 static 변수로 전환이 가능하다.
     return total;
 
 }
@@ -139,4 +139,4 @@ int main (void){
     }
 
     return 0;
-}
+}*/
