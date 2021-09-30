@@ -139,4 +139,27 @@ int main (void){
     }
 
     return 0;
+}
+
+int Fectorial(int n) { 간단한 재귀함수
+	if (n == 0) {
+		return 1;
+	}
+
+	else {
+		return n * Fectorial(n - 1);
+	}
+}
+
+int main (void){
+
+	printf("1! = %d \n", Fectorial(1));
+	printf("2! = %d \n", Fectorial(2));
+	printf("3! = %d \n", Fectorial(3));
+	printf("4! = %d \n", Fectorial(4));
+	printf("5! = %d \n", Fectorial(5));
+	printf("6! = %d \n", Fectorial(6));
+	printf("7! = %d \n", Fectorial(7));
+
+	return 0;
 }*/
