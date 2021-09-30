@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int addNum(void) {
+/*int addNum(void) { 09-01-01
 
     int num;
     printf("인자를 입력하시오 : ");
@@ -39,7 +39,7 @@ int minNum(int num1, int num2, int num3) {
 }
 
 
-int main(void) {
+int main(void) { 
 
     int num1, num2, num3, result;
 
@@ -59,4 +59,62 @@ int main(void) {
     return 0;
 
 
+}*/
+
+/*int Select(void) { 09-01-02
+
+    int sel;
+    printf("어떤 종류입니까 : ");
+    scanf("%d", &sel);
+
+    return sel;
 }
+
+float AddNum(void) {
+
+    float tem;
+    printf("온도를 입력하세요 : ");
+    scanf("%f", &tem);
+
+    return tem;
+}
+
+float CelTOFah(float cel) {
+
+    float Fah = 1.8 * cel + 32;
+
+    return Fah;
+
+
+}
+
+float FahTOCel(float fah) {
+
+    float Cel = (fah - 32) / 1.8;
+
+    return Cel;
+
+
+}
+
+int main(void) {
+
+    float result, num;
+    int select;
+
+    select = Select();
+    num = AddNum();
+
+    if (select == 1) {
+
+        printf("온도는 %f 입니다.", CelTOFah(num));
+
+    }
+
+    else if (select == 2) {
+
+        printf("온도는 %f 입니다.", FahTOCel(num));
+    }
+
+    return 0;
+}*/
