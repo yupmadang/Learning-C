@@ -179,3 +179,33 @@ int main(void) {
 
     return 0;
 }*/
+
+/*chapter10 문제 6번 : 초 입력 한 후 시간,분,초로 출력하기*/
+
+/*int AddSec(void) {
+
+    int sec;
+    printf("초를 입력하시오 : ");
+    scanf("%d", &sec);
+    return sec;
+}
+
+int CalcTime() {
+
+    int h, m, s;
+    int sec = AddSec();
+
+    h = sec / 3600;
+    m = (sec % 3600) / 60;
+    s = (sec % 3600) % 60;
+
+    printf("[ h: %d, m: %d, s:%d ]", h, m, s);
+
+}
+
+int main(void) {
+    
+    CalcTime();
+
+    return 0;
+}*/
