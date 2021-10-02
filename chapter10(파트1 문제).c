@@ -130,13 +130,52 @@ int main(void) {
 
 }*/
 
-/*chapter 10 4번 문제 :  */
+/*chapter 10 4번 문제 : 물품의 수 계산하기*/
+
+/*int main(void) {
+    int a, b, c;
+    int m = 3500;
+    
+    printf("소유하고 있는 금액 : 3500 \n");
+
+    for (a = 1; a < m / 500; a++)
+        for (b = 1; b < m / 700; b++)
+            for (c = 1; c < m / 400; c++)
+                if ((500 * a) + (700 * b) + (400 * c) == m)
+                    printf("A %d개 B %d개 C %d개 \n", a, b, c);
+    
+    
+    return 0;
+
+}*/
+
+/*chapter 10 5번 문제 : 소수 출력하기*/
+
+/*int Calc() {
 
 
+    int num, cnt;
+    cnt = 0;
 
-int main (void){
+	for (num = 2; cnt < 10; num++)
+		for (int i = 1; i < num; i++)
+		{
+			if (num % i == 0 && i != 1)
+				break;
+			if (i == num - 1)
+			{
+				printf("%d ", num);
+				cnt++;
+			}
+		}
+
+}
+
+int main(void) {
+
+    Calc();
 
 
 
     return 0;
-}
+}*/
