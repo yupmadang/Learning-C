@@ -88,3 +88,28 @@
 
 	return 0;
 }*/
+
+/*int main(void){
+
+	char arr[50];
+	printf("영단어를 입력하세요 \n");
+	scanf("%s", arr);                    *scanf 함수의 경우 %c로 받을 경우 배열의 첫머리만 입력받음, 단어를 입력할 경우 %s로 입력해야 한다.
+
+	int i = 0;
+	char max = arr[0];
+
+
+	while (arr[i] != '\0'){
+
+		if (max < arr[i])
+			max = arr[i];
+		i++;
+	}
+
+
+	printf("아스키 코드 값이 가장 큰 문자 : %c", max);
+
+
+    return 0;
+}*/
+
