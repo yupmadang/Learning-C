@@ -60,3 +60,31 @@
 
     printf("배열의 길이 : %d", len);
 }*/
+
+/*int main(void) { 2021.10.04 11-2-2 문제풀이 : 문자 입력 후 문자 정렬 반전 
+
+
+	int len, temp;
+	len = 0;
+
+	char voca[100];
+	printf("단어를 입력하시오 : ");
+	scanf("%s", voca);
+	printf("\n");
+
+	printf("본 단어 : %s ",voca);
+
+	while (voca[len] != '\0')
+		len++;
+
+	for (int i = 0; i < len / 2; i++) {
+		temp = voca[i];
+		voca[i] = voca[(len - i) - 1];
+		voca[(len - i) - 1] = temp;
+	}
+
+	printf("반전단어 : %s", voca);
+
+
+	return 0;
+}*/
