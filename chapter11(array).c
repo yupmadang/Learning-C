@@ -45,3 +45,18 @@
 
     return 0;
 }*/
+
+/*int main(void) { 2021.10.04 11-2-1 문제풀이 : 문자 입력 후 배열 길이 출력
+
+
+    char arr[100];
+    int len = 0;
+    printf("단어를 입력하시오 : ");
+    scanf("%s", &arr);
+    while (arr[len] != 0) {
+        len++;
+
+    }
+
+    printf("배열의 길이 : %d", len);
+}*/
