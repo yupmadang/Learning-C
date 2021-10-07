@@ -97,4 +97,29 @@ int main (void){ 13-01-03 문제 풀이 2021.10.07 : ptr 포인터 변수를 arr
 
     printf("%d ", total);
     return 0;
-}*/
+}
+
+int main (void){ 13-01-04 문제 풀이 2021.10.07 : 배열의 값을 역순으로 뒤집기
+
+    int temp;
+    int arr[6] = {1, 2, 3, 4, 5, 6};
+    int *ptr1 = &arr[0];
+    int *ptr2 = &arr[5];
+
+    for (int i = 0; i<3; i++){
+        temp = *ptr1;
+        *ptr1 = *ptr2;
+        *ptr2 = temp;
+        ptr1+=1;
+        ptr2-=1;
+    }
+
+    for (int i = 0; i < 6; i++){
+        printf("%d ", arr[i]);
+    }
+
+
+
+
+    return 0;
+} */
