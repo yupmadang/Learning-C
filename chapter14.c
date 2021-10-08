@@ -143,6 +143,24 @@ int main (void){
     printf("%d ", result);
 
     return 0;
+}
+
+void Swap3 (int *ptr1, int *ptr2, int *ptr3){ 14-01-02 문제 세 변수의 값을 서로 바꾸는 함수 작성
+    int temp = *ptr3;
+    *ptr3 = *ptr2;
+    *ptr2 = *ptr1;
+    *ptr1 = temp;
+}
+
+int main (void){
+
+    int num1, num2, num3;
+    num1 = 10; num2 = 20; num3 = 30;
+
+    Swap3(&num1, &num2, &num3);
+    printf("%d %d %d", num1, num2, num3);
+
+    return 0;
 }*/
 
 
