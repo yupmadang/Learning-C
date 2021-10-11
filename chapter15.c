@@ -22,6 +22,8 @@ void CalcArr2(int arr[]){
 
 
 
+
+
 int main (void){
 
     int arr[10];
@@ -34,6 +36,28 @@ int main (void){
     CalcArr(arr);
     CalcArr2(arr);
 
+
+    return 0;
+}*/
+
+/*void CalcNum (int num){ 10진수를 2진수로 변환하는 프로그램
+    int rem = num % 2;  
+    num /= 2;  
+
+    if(num > 0){
+        CalcNum(num);
+    }
+    printf("%d", rem);
+    return;
+}
+
+int main (void){
+    int num;
+    printf("정수를 입력하세요: ");
+    scanf("%d ", &num);
+
+    CalcNum(num);
+    printf("\n");
 
     return 0;
 }*/
