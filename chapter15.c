@@ -140,4 +140,44 @@ int main (void){
 
       return 0;
 
+  }
+
+  int DesSort(int param[], int len){ 전달받은 배열의 수를 내림차순으로 정리하는 함수입니다.
+      for(int i=0; i<len; i++){
+          for(int j=0; j<len-i-1; j++){
+              int temp;
+              if(param[j] < param[j+1]){
+                  temp = param[j+1];
+                  param[j+1] = param[j];
+                  param[j] = temp;
+              }
+          }
+      }
+        
+      return param;
+  }
+
+  void ShowArr(int param[], int len)
+  {
+      for(int i=0; i<len; i++){
+          printf("%d ", param[i]);
+      }
+
+      printf("\n");
+  }
+
+  int main(void)
+  {   
+      int arr[7];
+
+      for(int i=0; i<7; i++){
+          printf("정수를 입력하시오: ");
+          scanf("%d", &arr[i]);
+      }
+
+      printf("내림차순: ");
+      ShowArr(DesSort(arr, 7), 7);
+
+
+      return 0;
   }*/
