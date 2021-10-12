@@ -60,4 +60,37 @@ int main (void){
     printf("\n");
 
     return 0;
-}*/
+}
+
+ int main(void){ 문제 3번 홀수부터 크기순 출력 후 짝수 출력
+      int num;
+      int arr[10];
+      int A = 9;
+      int B = 0;
+
+      printf("정수 10개 입력: \n");
+        
+      for(int i=0; i<10; i++){   
+          printf("입력: ");
+          scanf("%d", &num);
+            
+          switch(num%2){
+              case 0:
+                  arr[A] = num;
+                  A--;
+              break;
+
+              case 1:
+                  arr[B] = num;
+                  B++;
+              break;
+          }
+      }
+        
+      for(int i=0; i<10; i++){
+          printf("%d ", arr[i]);
+      }
+        
+      return 0;
+
+  }*/
