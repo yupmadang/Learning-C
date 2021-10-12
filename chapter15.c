@@ -93,4 +93,51 @@ int main (void){
         
       return 0;
 
+  }
+
+  void CalcWord (char param[], int len){  회문을 판별하는 함수
+
+      int start = 0;
+      int end = len-1;
+      for(int i=0; i < len/2; i++){ 배열을 반으로 나누어 대응되는 위치의 값과 비교
+          if(start == end){
+              break;
+          }
+          if(param[start] != param[end]){
+              printf("회문이 아닙니다.\n");
+              return;
+          }
+
+          start += 1;
+          end -= 1;
+      }
+      printf("회문 입니다.\n");
+      return;
+
+  }
+
+  int main(void){
+
+      char str[30]; 
+      int len;
+
+      printf("단어 입력: ");
+      scanf("%s", str);
+
+      printf("입력한 단어: ");
+
+      for(len=0; len<30; len++){ 배열의 길이를 계산하는 함수
+          if(str[len] == '\0'){
+              break;
+          }
+          printf("%c", str[len]);
+      }
+
+      printf("\n");
+      printf("입력받은 단어의 길이: %d \n", len);
+        
+      CalcWord(str, len);
+
+      return 0;
+
   }*/
