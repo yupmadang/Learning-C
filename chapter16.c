@@ -75,4 +75,54 @@ int main (void){ 2차원 배열의 여러가지 선언방식
 
 
     return 0;
+}
+
+int main (void){ 3차원 배열의 선언과 접근 예제
+
+    int mean = 0;
+    int arr[3][3][2] = {
+    {
+        {70,80},
+        {94,90},
+        {70,85}
+    },
+    {
+        {83,90},
+        {95,60},
+        {90,82}
+    },
+    {
+        {98,89},
+        {99,94},
+        {91,87}
+    }
+    };
+
+    for(int i = 0; i < 2; i++){
+        for(int j =0; j < 3; j++){
+            mean += arr[0][i][j];
+        }
+    }
+    printf("A 학급 평균 : %g \n", (double)mean/6);
+
+
+    mean = 0;
+    for(int i = 0; i < 2; i++){
+        for(int j =0; j < 3; j++){
+            mean += arr[1][i][j];
+        }
+    }
+    printf("B 학급 평균 : %g \n", (double)mean/6);
+
+    mean = 0;
+    for(int i = 0; i < 2; i++){
+        for(int j =0; j < 3; j++){
+            mean += arr[2][i][j];
+        }
+    }
+    printf("C 학급 평균 : %g \n", (double)mean/6);
+
+    
+
+    return 0;
 }*/
