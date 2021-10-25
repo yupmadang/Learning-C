@@ -33,4 +33,46 @@ int main (void){  메모리 상의 배열 할당을 확인
     }
 
     return 0;
+}
+
+int main (void){ 2차원 배열의 여러가지 선언방식
+
+    int arr[3][3]={
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+    };
+
+    int arr2[3][3]={
+        {1},
+        {4,5},
+        {7,8,9}
+    };
+
+    int arr3[3][3]={1,2,3,4,5,6,7};
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            printf("%d",arr[i][j]);
+        }
+        printf("\n");
+    }
+
+      for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            printf("%d",arr2[i][j]);
+        }
+        printf("\n");
+    }
+
+      for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            printf("%d",arr3[i][j]);
+        }
+        printf("\n");
+    }
+
+
+
+    return 0;
 }*/
