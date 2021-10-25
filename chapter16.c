@@ -1,24 +1,36 @@
 #include <stdio.h>
 
-int main (void){
+/*int main (void){
 
     int villa [4][2];
     int popu;
 
-    /*ê°€êµ¬ë³„ ê±°ì£¼ì¸ì› ì…ë ¥*/
+    °¡±¸º° °ÅÁÖÀÎ¿ø ÀÔ·Â
     for(int i = 0; i < 4; i++){
         for(int j =0; j < 2; j++){
-            printf("%d ì¸µ %d í˜¸ ì¸êµ¬ìˆ˜: ",i+1,j+1);
+            printf("%d Ãş %d È£ ÀÎ±¸¼ö: ",i+1,j+1);
             scanf("%d", &villa[i][j]);
         }
     }
-    /*ê°€êµ¬ì› ê±°ì£¼ì¸ì› ì¶œë ¥*/
+    °¡±¸¿ø °ÅÁÖÀÎ¿ø Ãâ·Â
     for(int i =0; i < 4; i++){
         popu = 0;
         popu += villa[i][0];
         popu += villa[i][1];
-        printf("%d ì¸µì˜ ì¸êµ¬ìˆ˜: %d \n",i+1,popu);
+        printf("%d ÃşÀÇ ÀÎ±¸¼ö: %d \n",i+1,popu);
     }
 
     return 0;
 }
+
+int main (void){  ¸Ş¸ğ¸® »óÀÇ ¹è¿­ ÇÒ´çÀ» È®ÀÎ
+
+    int arr[3][2];
+    for(int i =0; i < 3; i++){
+        for(int j =0; j < 2; j++){
+            printf("%p \n", &arr[i][j]);
+        }
+    }
+
+    return 0;
+}*/
