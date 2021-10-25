@@ -165,8 +165,49 @@ int main (void){ 연습문제 2번 2021.10.25 arr1을 이용한 arr2 초기화
         printf("\n");
     }
 
+    return 0;
+}
+int arr[5][5];
 
- 
+void StdScore (void){
+    for(int i = 0; i < 4; i++){
+        int sum = 0;
+        printf("%d 번째 학생의 성적 입력 %d: ", i+1);
+        for(int j = 0; j < 4; j++){
+            printf("과목 %d: ", j+1);
+            scanf("%d", &arr[i][j]);
+            sum += arr[i][j];
+        }
+        arr[i][4] = sum;
+    }
+}
+
+void ScoreSum (void){
+    int sum = 0;
+    for(int i = 0; i < 4; i++){
+        sum = 0;
+        for(int j = 0; j < 4; j++){
+            sum+=arr[i][j];
+        }
+        arr[4][i] = sum;
+        arr[4][4] += sum;
+    }
+}
+
+void ShowScore (void){
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < 5; j++){
+            printf("%4d",arr[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main (void){
+
+    StdScore();
+    ScoreSum();
+    ShowScore();
 
     return 0;
 }*/
