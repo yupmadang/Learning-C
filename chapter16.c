@@ -125,4 +125,24 @@ int main (void){ 3차원 배열의 선언과 접근 예제
     
 
     return 0;
+}
+
+int main (void){ 연습문제 1번 2021.10.25 2차원 배열을 이용한 구구단 출력
+
+    int arr[3][9];
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 9; j++){
+            arr[i][j] = (i+2)*(j+1);
+        }
+    }
+
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 9; j++){
+            printf("%4d", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
 }*/
