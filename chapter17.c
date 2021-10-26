@@ -49,3 +49,38 @@ int main (void){ 포인터 배열과 포인터 배열의 포인터 형 예제
 
     return 0;
 }*/
+
+/*void MaxAndMin (int *arr , int size , int **ptr1, int **ptr2){    2021.10.26 연습문제 배열의 최대 최소 값을 출력
+    int *max, *min;
+    
+    max=min=&arr[0];
+    for(int i = 0; i < size; i++){ 최대,최소 산출 반복문
+        if(*max < arr[i]){
+            max = &arr[i];
+        }
+        if(*min > arr[i]){
+            min = &arr[i];
+        }
+    }
+
+    *ptr1 = max; ptr1 = &arr[i] 의미
+    *ptr2 = min; ptr2 = &arr[i] 의미
+
+}
+
+&maxPtr (인자) -> **ptr1 (매개변수) -> max -> arr[i] == maxPtr = MaxAndMin의 arr[i] 값과 같다. **ptr2도 같은 의미
+
+int main (void){
+    int * maxPtr, * minPtr;
+    int arr[5];
+
+    for(int i = 0; i < 5; i++){
+        printf("정수입력 %d : ", i+1);
+        scanf("%d", &arr[i]);
+    }
+
+    MaxAndMin(arr, sizeof(arr)/sizeof(int), &maxPtr, &minPtr);
+    printf("%d  %d \n", *maxPtr, *minPtr);
+
+    return 0; 
+}*/
