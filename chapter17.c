@@ -41,8 +41,8 @@ int main (void){ 포인터 배열과 포인터 배열의 포인터 형 예제
     int *ptr2 = &num2;
     int *ptr3 = &num3;
 
-    int * ptrArr[] = {ptr1, ptr2, ptr3};
-    int **dptr = ptrArr;
+    int * ptrArr[] = {ptr1, ptr2, ptr3}; int형인 더블포인터 ptrArr (배열의 이름은 배열의 [0]부분의 주솟값과 일치한다)
+    int **dptr = ptrArr; 더블포인터 dptr 와 ptrArr의 포인터 형은 일치한다.
 
     printf("%d %d %d \n", *(ptrArr[0]), *(ptrArr[1]), *(ptrArr[2]));
     printf("%d %d %d \n", *(dptr[0]), *(dptr[1]), *(dptr[2]));
