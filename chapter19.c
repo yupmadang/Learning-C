@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*void showStr (char* str){ 
+/*void showStr (char* str){ ÇÔ¼öÀÇ ÀÌ¸§Àº ¸Ş¸ğ¸®¿¡ ÀúÀå µÈ ÇÔ¼öÀÇ ÁÖ¼Ò¿Í µ¿ÀÏÇÑ ÀÇ¹Ì¸¦ °¡Áø´Ù.
     printf("%s \n", str);
 }
 
@@ -21,7 +21,7 @@ int main (void){
     return 0;
 }*/
 
-/*int WhoIsFirst (int num1, int num2, int (*cmp)(int n1, int n2)){ 3ë²ˆì§¸ ì¸ìì—ëŠ” í•¨ìˆ˜ì˜ ì£¼ì†Œê°’ì´ ë“¤ì–´ê°€ì•¼ í•œë‹¤. == í•¨ìˆ˜ í¬ì¸í„° ì„ ì–¸ ê°€ëŠ¥í•˜ë‹¤.
+/*int WhoIsFirst (int num1, int num2, int (*cmp)(int n1, int n2)){ 3¹øÂ° ÀÎÀÚ¿¡´Â ÇÔ¼öÀÇ ÁÖ¼Ò°ªÀÌ µé¾î°¡¾ß ÇÑ´Ù. == ÇÔ¼ö Æ÷ÀÎÅÍ ¼±¾ğ °¡´ÉÇÏ´Ù.
     return cmp(num1, num2);
 }
 
@@ -56,13 +56,41 @@ int main (void){
     int age2 = 30;
     int first;
 
-    printf("ì…ì¥ìˆœì„œ 1 \n");
-    first = WhoIsFirst(age1, age2, OlderFirst); 3ë²ˆì§¸ ì¸ìì— OlderFirst í•¨ìˆ˜ì˜ ì£¼ì†Œê°’ì´ ì „ë‹¬ ë¨. ì´ë¦„ ìì²´ê°€ ë°°ì—´ê³¼ ê°™ì´ ì£¼ì†Œë¥¼ ë‹´ê³  ìˆë‹¤.
-    printf("%dì„¸ì™€ %dì„¸ ì¤‘ %dì„¸ê°€ ë¨¼ì € ì…ì¥. \n", age1, age2, first);
+    printf("ÀÔÀå¼ø¼­ 1 \n");
+    first = WhoIsFirst(age1, age2, OlderFirst); 3¹øÂ° ÀÎÀÚ¿¡ OlderFirst ÇÔ¼öÀÇ ÁÖ¼Ò°ªÀÌ Àü´Ş µÊ. ÀÌ¸§ ÀÚÃ¼°¡ ¹è¿­°ú °°ÀÌ ÁÖ¼Ò¸¦ ´ã°í ÀÖ´Ù.
+    printf("%d¼¼¿Í %d¼¼ Áß %d¼¼°¡ ¸ÕÀú ÀÔÀå. \n", age1, age2, first);
 
-    printf("ì…ì¥ìˆœì„œ 2 \n");
+    printf("ÀÔÀå¼ø¼­ 2 \n");
     first = WhoIsFirst(age1, age2, YoungFirst);
-    printf("%dì„¸ì™€ %dì„¸ ì¤‘ %dì„¸ê°€ ë¨¼ì € ì…ì¥. \n", age1, age2, first);
+    printf("%d¼¼¿Í %d¼¼ Áß %d¼¼°¡ ¸ÕÀú ÀÔÀå. \n", age1, age2, first);
 
+    return 0;
+}*/
+
+/*int main (int argc, char*argv[]){ main ÇÔ¼ö·ÎÀÇ ÀÎÀÚ Àü´Ş ¿¹Á¦
+    int i = 0;
+    printf("Àü´ŞµÈ ¹®ÀÚ¿­ ÀÇ ¼ö : %d \n", argc);
+
+    for(i= 0; i < argc; i++){
+        printf("%d ¹øÂ° ¹®ÀÚ¿­ : %s \n", i+1, argv[i]);
+    }
+
+    return 0;
+}*/
+
+/*void showAllString(int argc, char **argv){ char **argv == char *argv[]
+    for(int i =0; i < argc; i++){
+        printf("%s \n", argv[i]);
+    }
+}
+
+int main (void){
+
+    char*str[3]={
+        "C Programming",
+        "C++ Programming",
+        "Java Programming"
+    };
+    showAllString(3, str);
     return 0;
 }*/
