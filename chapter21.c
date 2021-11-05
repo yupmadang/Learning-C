@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 /*int main (void){
     int ch1, ch2;
@@ -233,6 +234,80 @@ int main (void){  연습문제 2번 2021. 11. 05 문자열을 붙이되 널문자는 제거하고 붙
 
     puts(str3);
     printf("%d", strlen(str3)); 문자열의 길이 출력
+
+    return 0;
+}*/
+
+/*2021.11.05 연습문제 3번 이름과 나이를 입력하고 이를 비교하는 문제 이름과 나이 사이에는 공백이 존재하여야 한다.*/
+
+/*int Space (char str[]){ 이름과 나이 사이에 공백이 있는지 확인하는 함수
+    int len;
+    len = strlen(str);
+    for(int i = 0; i < len; i++){
+        if(str[i] == ' '){
+            return i;
+        }
+    }
+    return -1;
+
+}
+int Name (char str1[], char str2[]){ 이름이 동일한지 확인하는 함수
+    int index1 = Space(str1);
+    int index2 = Space(str2);
+
+    if(index1 != index2){
+        return 0;
+    }
+    else{
+        return !strncmp(str1, str2, index1);
+    }
+
+}
+
+int Age (char str1[], char str2[]){ 나이를 비교하는 함수
+    int age1, age2;
+    int index1 = Space(str1);
+    int index2 = Space(str2);
+
+    age1 = atoi(&str1[index1+1]);
+    age2 = atoi(&str2[index2+1]);
+
+    if(age1 == age2){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+
+}
+
+int main (void){
+    char str1[20];
+    char str2[20];
+
+    puts("이름과 나이를 입력하시오: ");
+    fgets(str1, sizeof(str1), stdin);
+    str1[strlen(str1)-1] = 0; 널문자가 들어갈 위치를 확보하는 코드
+    puts("이름과 나이를 입력하시오: ");
+    fgets(str2, sizeof(str2), stdin);
+    str2[strlen(str2)-1] = 0;
+    
+
+
+    if(Name(str1,str2)){
+        puts("이름이 동일합니다. \n");
+    }
+    else{
+        puts("이름이 동일하지 않습니다. \n");
+    }
+
+    if(Age(str1,str2)){
+        puts("나이가 동일합니다. \n");
+    }
+    else{
+        puts("나이가 동일하지 않습니다. \n");
+    }
+
 
     return 0;
 }*/
