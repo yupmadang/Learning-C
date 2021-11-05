@@ -210,3 +210,30 @@ int main (void){
     return 0;
 }*/
 
+/*void Remove (char str[]){ 널문자를 소멸시켜주는 함수
+    int len = strlen(str);
+    str[len-1] = 0;
+}
+
+int main (void){  연습문제 2번 2021. 11. 05 문자열을 붙이되 널문자는 제거하고 붙여라
+    char str1[20];
+    char str2[30];
+    char str3[40];
+
+    printf("1번째 문자열을 입력하시오: ");
+    fgets(str1, sizeof(str1), stdin);
+    Remove(str1); 첫번째 문자열에서 널문자 제거
+    printf("2번째 문자열을 입력하시오: ");
+    fgets(str2, sizeof(str2), stdin);
+    Remove(str2); 두번째 문자열에서 널문자 제거
+
+    strcat(str3, str1);
+    strcat(str3, str2);
+    strlen(str3); 문자열의 길이를 나타낸 코드
+
+    puts(str3);
+    printf("%d", strlen(str3)); 문자열의 길이 출력
+
+    return 0;
+}*/
+
