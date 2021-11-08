@@ -76,5 +76,58 @@ int main (void){
     return 0;
 }*/
 
+/*struct point
+{
+    int xpos;
+    int ypos;
+};
+
+int main (void){
+
+    struct point arr[3]; 구조체 배열 선언
+
+    for(int i = 0; i < 3; i++){
+        printf("좌표 입력: ");
+        scanf("%d %d", &arr[i].xpos, &arr[i].ypos);
+    }
+
+    for(int i = 0; i < 3; i++){
+        printf("[%d, %d] \n",arr[i].xpos, arr[i].ypos);
+    }
+
+    return 0;
+}*/
+
+/*구조체 배열의 arr[0]에는 구조체의 x값, y값이 같이 들어있다. 배열의 선언과 동시에 초기화도 가능하다.*/
+
+/*struct employee 연습문제 2번: 구조체 배열을 선언하고 각 값을 입력한 후 출력하기
+{
+    char name[7]; 
+    char num[14];
+    int pay;
+};
+
+int main (void){
+
+    struct employee person[3];
+    for(int i = 0; i < 3; i++){
+        printf("이름입력: ");
+        scanf("%s", &person[i].name);
+        printf("번호입력: ");
+        scanf("%s",&person[i].num);
+        printf("급여입력: ");
+        scanf("%d", &(person[i].pay));
+        printf("\n");
+    }
+
+    for(int i = 0; i < 3; i++){
+        printf("이름: %s \n", person[i].name);
+        printf("주민번호: %s \n", person[i].num);
+        printf("급여: %d", person[i].pay);
+        printf("\n");
+    }
+    return 0;
+}*/
+
 
 
