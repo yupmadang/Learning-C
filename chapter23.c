@@ -208,3 +208,98 @@ int main (void)
     return 0;
 }
 */
+/* 구조체 중첩 예제
+typedef struct point
+{
+    int xpos;
+    int ypos;
+}Point;
+
+typedef struct circle
+{
+    Point cen;
+    double rad;
+}Circle;
+
+
+void Info (Circle *cptr)
+{
+    printf("[%d , %d] \n", (cptr->cen).xpos, (cptr->cen).ypos);
+    printf("radius: %g \n", cptr -> rad);
+}
+
+int main (void)
+{
+    Circle c1 = {{1, 2}, 3.5};
+    Circle c2 = {2, 4, 3.9};
+    Info(&c1);
+    Info(&c2);
+    return 0;
+}
+*/
+/*
+typedef struct point     2021. 11. 15 구조체 사용자 정의 연습문제 2번 : 좌표를 이용한 사각형 넓이 출력
+{
+    int xpos;
+    int ypos;
+} Point;
+
+typedef struct
+{
+    Point ul;
+    Point rl;
+} Rectangle;
+
+void CalcArea (Rectangle area)
+{
+    printf("넓이 : %d \n", (area.rl.xpos-area.ul.xpos) * (area.rl.ypos-area.ul.ypos));
+}
+
+void ShowPoint (Rectangle area)
+{
+    printf("[%d, %d] \n", area.ul.xpos, area.ul.ypos);
+    printf("[%d, %d] \n", area.ul.xpos, area.rl.ypos);
+    printf("[%d, %d] \n", area.rl.xpos, area.ul.ypos);
+    printf("[%d, %d] \n", area.rl.xpos, area.rl.ypos);
+}
+
+int main (void)
+{
+    Rectangle ul = {{0, 0}, {7, 5}};
+    Rectangle rl = {100, 100};  --------------------------> 정의 되지 않은 구조체 변수는 0으로 초기화 됨으로 하나의 좌표를 입력해도 값이 출력된다.
+    CalcArea(ul);
+    ShowPoint(ul);
+    printf("\n");
+    CalcArea(rl);
+    ShowPoint(rl);
+    
+
+    return 0;
+}
+*/
+/*
+typedef struct sbox       구조체 sbox
+{
+    int mem1;
+    int mem2;
+    double mem3;
+}Sbox;
+
+typedef union ubox        공용체 ubox
+{
+    int mem1;
+    int mem2;
+    double mem3;
+}Ubox;
+
+int main (void)          결과로 구조체는 각 멤버를 할당하고 공용체는 가장 크기가 큰 변수를 할당하고 이를 다른 멤버가 공유한다.
+{                        이는 각 메모리 공간을 분리하여 접근 할 수 있다느걸 의미.
+    Sbox sb;
+    Ubox ub;
+    printf("%p %p %p \n",&sb.mem1, &sb.mem2, &sb.mem3);
+    printf("%p %p %p \n",&ub.mem1, &ub.mem2, &ub.mem3);
+    printf("%d %d \n", sizeof(sb), sizeof(ub));
+
+    return 0;
+}
+*/
