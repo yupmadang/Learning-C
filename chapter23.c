@@ -174,5 +174,37 @@ int main (void){
     return 0;
 }
 */
+/*
+typedef struct  2021. 11. 15 구조체 연습문제 1번: 두 좌표 자리 바꾸기 (포인터 활용)
+{
+    int xpos;
+    int ypos;
+} Point;
 
+void swapPoint (Point *pos1, Point *pos2)
+{
+    Point ptr;
+    ptr = *pos1;
+    *pos1 = *pos2;
+    *pos2 = ptr;
 
+}
+
+void showPoint (Point pos)
+{
+    printf("[%d , %d] \n", pos.xpos, pos.ypos);
+}
+
+int main (void)
+{
+    Point pos1 = {2 , 4};
+    Point pos2 = {5 , 7};
+    showPoint(pos1);
+    showPoint(pos2);
+    swapPoint(&pos1, &pos2);
+    showPoint(pos1);
+    showPoint(pos2);
+    
+    return 0;
+}
+*/
