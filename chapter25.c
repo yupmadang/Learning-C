@@ -23,3 +23,34 @@ int main (void)
     return 0;
 }
 */
+/*
+char * ReadName (void)
+{
+    char * name = (char*) malloc(sizeof(char*) *30);
+    printf("What's your name? ");
+    gets(name);
+    return name;
+
+}
+
+int main (void)
+{
+    char * name1 = ReadName();
+    printf("name1 : %s \n", name1);
+    char * name2 = ReadName();
+    printf("name2 : %s \n", name2);
+    free(name1);
+    free(name2);
+    return 0;
+}
+*/
+/*
+malloc 함수와 결과는 같지만 인자의 전달에 차이를 보이닌 calloc 함수
+malloc - 하나의 인자를 받아 크기를 정함 ex) (int*) malloc(sizeof(int)*7)
+calloc - 두 개의 인자를 전달 받아 크기를 정함 ex) (int*) calloc (메모리 주소, sizeof(int)*7);
+※ malloc 함수는 초기화 하지 않을 경우 난수로 초기화되지만 calloc 함수는 0으로 초기화가 진행된다.
+
+realloc 할당된 메모리 공간을 확장시키는 함수 (힙 영역에서만 확장이 가능하다.)
+※ 확장하려는 메모리의 공간이 부족 할 경우 새로운 메모리 곤간을 할당하고 기존의 값을 복사하여 반환하여 메모리의 주소가 다른 경우와
+메모리공간이 충분하여 반환하는 메모리의 주소값이 동일한 경우가 있다.
+*/
