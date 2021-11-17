@@ -85,3 +85,35 @@ int main (void)                  2021. 11. 17 메모리 동적할당 문제 1번: 문자열 �
     return 0;
 }
 */
+/*
+int main (void)                                   2021. 11. 17 realloc 함수의 활용 문제 2번
+{
+    int arrlen = 5;
+    int * arr = (int*) malloc(sizeof(int)*arrlen);
+    int idx = 0;
+
+    while(1)
+    {
+        printf("정수입력 : ");
+        scanf("%d", &arr[idx]);
+        if(arr[idx] == -1)
+        {
+            break;
+        }
+
+        if(arrlen == arr[idx+1])
+        {
+            arrlen+=3;
+            arr = (int*)realloc(arr, sizeof(int)*arrlen);
+        }
+        idx++;
+    }
+
+    for(int i = 0; i < idx; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    free(arr);
+    return 0;
+}
+*/
